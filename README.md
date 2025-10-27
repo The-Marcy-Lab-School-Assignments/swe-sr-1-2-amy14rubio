@@ -61,4 +61,10 @@ Compare and contrast these two options. Which would _you_ choose and why? What a
 
 ### Response
 
-I would choose the second option, where each user can be accessed through their own individual object. Finding a specific user in `usersObject` would involve checking if the username exists using an if statement (for example, `if (usersObject['Spongebob'])`) to ensure the key is found without accidentally adding a new property. In contrast, with `usersArray`, a user would have to be found by checking through each element in the array, accessing the object’s `username` key, and then using an if statement to see if the key’s value matches the desired user. In `usersObject`, each user can be iterated through using a for in loop, while in `usersArray`, each user would be iterated through using a for loop according to the array’s length. Arrays are generally preferred when the order of elements matters, but in this case, the order in which users are listed isn’t important. Therefore, using an object, where the order of users does not matter, would be ideal.
+As to finding a _specific user_, I would choose the `usersObject`, but for _iterating_ through users, I would prefer to use `usersArray`, just because I’m more used to using array methods to loop through data.
+
+Finding a specific user in `usersObject` would involve checking if the `username` exists using an `if statement` (for example, `if (usersObject['Spongebob'])`) to make sure the key is found without accidentally adding a new property. In contrast, with `usersArray`, a user would have to be found by checking through each element in the array, accessing each object’s username key, and either using an `if statement` to compare the value or using methods like `.find()` or `.filter()`.
+
+The advantage of `usersArray` is that we can use various array methods to iterate according to our needs. On the other hand, `usersObject` makes it faster and easier to look up a specific user and also has its own object methods, I'm just personally not as familiar with them.
+
+Arrays are generally preferred when **the order of elements matters**, but in this case, the order of users isn’t important for either finding or iterating through them. Therefore, using an object would be ideal for **finding a user**, while I would personally prefer to use an array when **iterating** through the users.
